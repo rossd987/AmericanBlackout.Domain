@@ -9,7 +9,7 @@ namespace AmericanBlackout.Domain
     public class Band
     {
         public long Id { get; set; }
-        public long Name { get; set; }
+        public string Name { get; set; }
         public string Website { get; set; }
         public string Facebook { get; set; }
     }

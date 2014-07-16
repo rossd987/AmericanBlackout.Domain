@@ -4,11 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using AmericanBlackout.Domain.Redis;
+
 namespace AmericanBlackout.Domain
 {
-    public class Show
+    public class Show : RedisItem
     {
-        public long Id { get; set; }
         public DateTime Date { get; set; }
         public long VenueId { get; set; }
         public List<long> BandIds { get; set; }

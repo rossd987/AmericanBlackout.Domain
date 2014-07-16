@@ -13,5 +13,15 @@ namespace AmericanBlackout.Domain.Redis
     {
         IRedisClient Create();
         IRedisTypedClient<T> As<T>(IRedisClient client);
+
+        IList<T> GetAll<T>();
+
+        T Get<T>(long id);
+
+        void Create<T>(T item) where T : RedisItem;
+
+        void Store<T>(T item) where T : RedisItem;
+
+        void Delete<T>(T item) where T : RedisItem;
     }
 }

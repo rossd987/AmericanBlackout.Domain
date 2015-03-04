@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using System.Web.Mvc;
 using AmericanBlackout.Domain.Redis;
 
 namespace AmericanBlackout.Domain
@@ -18,6 +19,11 @@ namespace AmericanBlackout.Domain
         public List<long> TopContributors { get; set; }
         public DateTime BeginDate { get; set; }
         public DateTime EndDate { get; set; }
+
+        [AllowHtml]
         public string Content { get; set; }
+
+        [AllowHtml]
+        public string PaypalButton { get; set; }
     }
 }

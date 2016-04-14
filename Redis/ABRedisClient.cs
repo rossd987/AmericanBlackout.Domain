@@ -14,7 +14,7 @@ namespace AmericanBlackout.Domain.Redis
     {
         public IRedisClient Create()
         {
-            return new RedisClient("nyu");
+            return new RedisClient("ritsuko");
         }
 
         public IRedisTypedClient<T> As<T>(IRedisClient client)

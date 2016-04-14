@@ -16,6 +16,8 @@ namespace AmericanBlackout.Domain
         public string TicketLink { get; set; }
         public string TicketText { get; set; }
         public string PosterLink { get; set; }
+        public DateTime PublishDate { get; set; }
+
         public string PosterLinkSmall
         {
             get

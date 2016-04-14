@@ -15,6 +15,8 @@ namespace AmericanBlackout.Domain
         public decimal PriceHigh { get; set; }
         public decimal PriceLow { get; set; }
         public string Title { get; set; }
+        
+        [AllowHtml]
         public string Description { get; set; }
         public DateTime ExpirationDate { get; set; }
         public int Priority { get; set; }

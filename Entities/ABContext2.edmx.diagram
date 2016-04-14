@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="05e286f3c5bd4efd8db809116cad0a46" Name="Diagram1">
+        <EntityTypeShape EntityType="ABModel2.Address" Width="1.5" PointX="0.75" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ABModel2.ItemAvailability" Width="1.5" PointX="8.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ABModel2.MusicAlbum" Width="1.5" PointX="9.75" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ABModel2.MusicEvent" Width="1.5" PointX="5.25" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ABModel2.MusicGroup" Width="1.5" PointX="7.5" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ABModel2.MusicRecording" Width="1.5" PointX="12" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ABModel2.Offer" Width="1.5" PointX="10.5" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ABModel2.OrganizationRole" Width="1.5" PointX="9.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ABModel2.Place" Width="1.5" PointX="3" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ABModel2.Product" Width="1.5" PointX="8.25" PointY="20.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ABModel2.Role" Width="1.5" PointX="12" PointY="14.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ABModel2.URL" Width="1.5" PointX="13" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ABModel2.VideoObject" Width="1.5" PointX="9.75" PointY="16.75" IsExpanded="true" />
+        <AssociationConnector Association="ABModel2.FK_Place_Address" ManuallyRouted="false" />
+        <AssociationConnector Association="ABModel2.FK_Offer_ItemAvailability" ManuallyRouted="false" />
+        <AssociationConnector Association="ABModel2.FK_MusicAlbum_MusicGroup" ManuallyRouted="false" />
+        <AssociationConnector Association="ABModel2.FK_MusicRecording_MusicAlbum" ManuallyRouted="false" />
+        <AssociationConnector Association="ABModel2.FK_MusicEvent_Location" ManuallyRouted="false" />
+        <AssociationConnector Association="ABModel2.FK_Offer_MusicEvent" ManuallyRouted="false" />
+        <AssociationConnector Association="ABModel2.FK_MusicGroup_Place" ManuallyRouted="false" />
+        <AssociationConnector Association="ABModel2.FK_VideoObject_MusicGroup" ManuallyRouted="false" />
+        <AssociationConnector Association="ABModel2.FK_Offer_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="ABModel2.FK_Place_ContainedIn" ManuallyRouted="false" />
+        <AssociationConnector Association="ABModel2.MusicAlbum_URL" ManuallyRouted="false" />
+        <AssociationConnector Association="ABModel2.MusicEvent_MusicGroup" ManuallyRouted="false" />
+        <AssociationConnector Association="ABModel2.MusicGroup_OrganizationRole" ManuallyRouted="false" />
+        <AssociationConnector Association="ABModel2.MusicGroup_URL" ManuallyRouted="false" />
+        <AssociationConnector Association="ABModel2.OrganizationRole_Role" ManuallyRouted="false" />
+        <AssociationConnector Association="ABModel2.OrganizationRole_URL" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
